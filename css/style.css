@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 75%;
   height: 10vh;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .container-home {
   display: flex;
-  width: 65%;
+  width: 75%;
   height: 90vh;
 }
 
@@ -163,7 +163,7 @@ body {
 .container-about {
   display: flex;
   height: 80vh;
-  width: 65%;
+  width: 75%;
   background-color: whitesmoke;
 }
 
@@ -172,15 +172,15 @@ body {
   border-width: 0.2rem;
   border-color: rgb(51, 44, 56);
   border-radius: 1rem;
-  width: 400px;
-  height: 450px;
+  width: 300px;
+  height: 350px;
   margin-top: 2rem;
 }
 
 .avatar-about {
   border-radius: 1rem;
-  width: 400px;
-  height: 450px;
+  width: 300px;
+  height: 350px;
   margin-top: -2rem;
   margin-left: 2rem;
 }
@@ -203,14 +203,14 @@ body {
 }
 
 .topic-title-light {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   margin-top: 3.5rem;
   margin-bottom: 0.5rem;
 }
 
 .topic-title-dark {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   margin-top: 3.5rem;
   margin-bottom: 0.5rem;
@@ -225,7 +225,7 @@ body {
 .container-projects {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 75%;
   align-items: center;
 }
 
@@ -243,7 +243,7 @@ body {
   flex-direction: column;
   padding: 0.05rem;
   width: 30%;
-  height: 65vh;
+  height: 80vh;
   background-color: whitesmoke;
   border-radius: 1rem;
   align-items: center;
@@ -362,7 +362,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 65%;
+  width: 75%;
 }
 
 .skill-container {
@@ -401,7 +401,7 @@ body {
 }
 
 .skill-box > p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   margin-top: 1rem;
@@ -409,10 +409,121 @@ body {
 }
 
 .skill-item > img {
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .skill-item > p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 3rem;
+}
+/* Timeline */
+
+.container-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.timeline-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.timeline-node {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding: 4rem;
+  margin: 0;
+}
+
+.timeline-node:nth-child(odd) .timeline-item-border {
+  border-right: dashed;
+  border-bottom: dashed;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-width: 0.2rem;
+  border-color: rgb(246, 76, 114);
+  padding-left: 2rem;
+  margin-right: -2rem;
+  margin-bottom: -0.1rem;
+}
+
+.timeline-node:nth-child(even) .timeline-item-border {
+  border-left: dashed;
+  border-bottom: dashed;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-width: 0.2rem;
+  border-color: rgb(246, 76, 114);
+  margin-left: -2rem;
+  padding-right: 2rem;
+  margin-bottom: -0.2rem;
+}
+
+.timeline-node:first-child .timeline-item-border {
+  border-top-right-radius: 0;
+}
+
+.timeline-node:last-child .timeline-item-border {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-content {
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.timeline-node:nth-child(odd) .timeline-number {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  color: rgb(51, 44, 56);
+  background-color: rgb(246, 76, 114);
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: -3rem;
+}
+
+.timeline-node:nth-child(even) .timeline-number {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  color: rgb(51, 44, 56);
+  background-color: rgb(246, 76, 114);
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-left: -3rem;
 }
