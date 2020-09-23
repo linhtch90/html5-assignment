@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.container-dark {
   display: flex;
   width: 100vw;
   justify-content: center;
@@ -25,6 +25,8 @@ body {
   justify-content: center;
   background-color: whitesmoke;
 }
+
+/* Navigation bar */
 
 .navigation-bar {
   display: flex;
@@ -58,6 +60,8 @@ body {
   transition: 1s;
   cursor: pointer;
 }
+
+/* Home section */
 
 .container-home {
   display: flex;
@@ -106,7 +110,9 @@ body {
   letter-spacing: 0.2rem;
   background-color: rgb(51, 44, 56);
   padding: 0.8rem;
-  border: none;
+  border: solid;
+  border-width: 0.1rem;
+  border-color: rgb(51, 44, 56);
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   margin-top: 2rem;
@@ -118,6 +124,9 @@ body {
   background-color: whitesmoke;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(246, 76, 114, 0.5);
   transition: 1s;
+  border: solid;
+  border-width: 0.1rem;
+  border-color: rgb(51, 44, 56);
 }
 
 .home-icons {
@@ -149,8 +158,261 @@ body {
   margin-left: -2rem;
 }
 
+/* About section */
+
 .container-about {
   display: flex;
   height: 80vh;
+  width: 65%;
   background-color: whitesmoke;
+}
+
+.avatar-shadow-about {
+  border: solid;
+  border-width: 0.2rem;
+  border-color: rgb(51, 44, 56);
+  border-radius: 1rem;
+  width: 400px;
+  height: 450px;
+  margin-top: 2rem;
+}
+
+.avatar-about {
+  border-radius: 1rem;
+  width: 400px;
+  height: 450px;
+  margin-top: -2rem;
+  margin-left: 2rem;
+}
+
+.container-about-left {
+  display: flex;
+  flex: 1;
+  width: 40%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-about-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 60%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.topic-title-light {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.topic-title-dark {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: whitesmoke;
+}
+
+.topic-content p {
+  margin-top: 2rem;
+}
+
+/* Projects */
+.container-projects {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.05rem;
+  width: 30%;
+  height: 65vh;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+  align-items: center;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card-photo {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-title {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.card-subtitle {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.card-content {
+  width: 85%;
+  margin-top: 2rem;
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.card:nth-child(even) .card-button:hover {
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 60%;
+  height: 110%;
+  background-image: linear-gradient(
+    to right,
+    rgb(66, 234, 129),
+    rgb(57, 248, 211)
+  );
+  transition: 1s;
+}
+
+.card:nth-child(odd) .card-button:hover {
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 60%;
+  height: 110%;
+  background-image: linear-gradient(
+    to right,
+    rgb(234, 86, 66),
+    rgb(248, 235, 57)
+  );
+  transition: 1s;
+}
+
+.card:nth-child(even) .card-line {
+  height: 0.2rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(66, 234, 129),
+    rgb(57, 248, 211)
+  );
+  margin-top: 0.5rem;
+}
+
+.card:nth-child(odd) .card-line {
+  height: 0.2rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(234, 86, 66),
+    rgb(248, 235, 57)
+  );
+  margin-top: 0.5rem;
+}
+
+/* Skills */
+
+.container-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.skill-box {
+  display: flex;
+  flex: content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-width: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.skill-subbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-box > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.skill-item > img {
+  margin: 1.5rem;
+}
+
+.skill-item > p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
 }

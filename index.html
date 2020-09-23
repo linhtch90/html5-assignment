@@ -24,7 +24,7 @@
   <body>
     <!-- Navigation bar -->
     <section id="navigation">
-      <div class="container">
+      <div class="container-dark">
         <nav class="navigation-bar">
           <ul>
             <li><a href="">Home</a></li>
@@ -38,7 +38,7 @@
     </section>
     <!-- Home -->
     <section id="home">
-      <div class="container">
+      <div class="container-dark">
         <div class="container-home">
           <!-- Home left side -->
           <div class="container-home-left">
@@ -74,13 +74,299 @@
       <div class="container-light">
         <div class="container-about">
           <!-- About left side -->
-          <div class="container-home-right">
-            <div class="avatar-shadow">
-              <img src="./images/garv.jpg" alt="avatar" class="avatar" />
+          <div class="container-about-left">
+            <div class="avatar-shadow-about">
+              <img
+                src="./images/garv-about.jpg"
+                alt="avatar"
+                class="avatar-about"
+              />
             </div>
           </div>
           <!-- About right side -->
-          <div class="container-home-left"></div>
+          <div class="container-about-right">
+            <div class="topic-title-light"><h2>About</h2></div>
+            <div class="title-bar"></div>
+            <div class="topic-content">
+              <p>
+                Hey, My name is Garv Nanwani and I am currently a Second Year
+                Undergraduate Student at Jamia Millia Islamia, New Delhi.
+              </p>
+              <p>My field of Interests are programming and psychology.</p>
+              <p>
+                I have been coding for around 2 years now. I love to design
+                websites and build full stack applications using MERN stack
+                preferably.
+              </p>
+              <p>
+                I am also a guest writer at
+                <a href="daily.dev" style="color: black">daily.dev</a> where I
+                write technical articles related to development and programming
+                in general.
+              </p>
+            </div>
+            <div>
+              <input
+                type="button"
+                value="CONNECT WITH ME"
+                class="home-button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container-dark">
+        <div class="container-projects">
+          <!-- Topic name -->
+          <div class="topic-title-dark"><h2>Projects</h2></div>
+          <div class="title-bar"></div>
+          <div class="card-container">
+            <!-- Card - Blogging  -->
+            <div class="card">
+              <div class="card-top">
+                <div>
+                  <img
+                    src="./images/project-blogging-site.jpg"
+                    alt="project-blogging"
+                    class="card-photo"
+                  />
+                </div>
+                <div class="card-title"><p>Blogging Site</p></div>
+                <div class="card-subtitle">
+                  <p>Tech Used - Django Html Css</p>
+                </div>
+                <div class="card-line"></div>
+                <div class="card-content">
+                  <p>
+                    Website where I can host my blogs. Made with Django backend,
+                    and all the user posts are managed through admin.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-button">
+                  <i class="far fa-window-restore"></i> &nbsp
+                  <span>Live Site</span>
+                </div>
+                <div class="card-button">
+                  <i class="fab fa-github-alt"></i> &nbsp<span>Repo Link</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card - Weather -->
+            <div class="card">
+              <div class="card-top">
+                <div>
+                  <img
+                    src="./images/project-weather.png"
+                    alt="project-blogging"
+                    class="card-photo"
+                  />
+                </div>
+                <div class="card-title"><p>Weather PWA App</p></div>
+                <div class="card-subtitle">
+                  <p>Tech Used - React, PWA</p>
+                </div>
+                <div class="card-line"></div>
+                <div class="card-content">
+                  <p>
+                    A PWA weather app which you can install on your phones as
+                    well as desktop. Functions properly on every platform and
+                    loads an offline page when the user is offline.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-button">
+                  <i class="far fa-window-restore"></i> &nbsp
+                  <span>Live Site</span>
+                </div>
+                <div class="card-button">
+                  <i class="fab fa-github-alt"></i> &nbsp<span>Repo Link</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card - Dictionary -->
+            <div class="card">
+              <div class="card-top">
+                <div>
+                  <img
+                    src="./images/project-dictionary.jpg"
+                    alt="project-blogging"
+                    class="card-photo"
+                  />
+                </div>
+                <div class="card-title"><p>Dictionary App</p></div>
+                <div class="card-subtitle">
+                  <p>Tech Used - Html, CSS and Javascript</p>
+                </div>
+                <div class="card-line"></div>
+                <div class="card-content">
+                  <p>
+                    Dictionary wherein you can find the meaning of any word,
+                    gives suggestions and also has feature for audio
+                    pronunciation of the word.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-button">
+                  <i class="far fa-window-restore"></i> &nbsp
+                  <span>Live Site</span>
+                </div>
+                <div class="card-button">
+                  <i class="fab fa-github-alt"></i> &nbsp<span>Repo Link</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card - Calculator -->
+            <div class="card">
+              <div class="card-top">
+                <div>
+                  <img
+                    src="./images/project-calculator.png"
+                    alt="project-blogging"
+                    class="card-photo"
+                  />
+                </div>
+                <div class="card-title"><p>Calculator</p></div>
+                <div class="card-subtitle">
+                  <p>Tech Used - Vanilla Javascript</p>
+                </div>
+                <div class="card-line"></div>
+                <div class="card-content">
+                  <p>
+                    Calculator made using Html, CSS and Javascript which can
+                    perform all the basic math operations.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-button">
+                  <i class="far fa-window-restore"></i> &nbsp
+                  <span>Live Site</span>
+                </div>
+                <div class="card-button">
+                  <i class="fab fa-github-alt"></i> &nbsp<span>Repo Link</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container-light">
+        <div class="container-skills">
+          <!-- Topic name -->
+          <div class="topic-title-light"><h2>Skills</h2></div>
+          <div class="title-bar"></div>
+
+          <!-- Skills boxes -->
+          <div class="skill-container">
+            <!-- Languages -->
+            <div class="skill-box">
+              <p>Languages</p>
+              <div class="skill-subbox">
+                <div class="skill-item">
+                  <img
+                    src="./images/python.svg"
+                    alt="python-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>Python</p>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="./images/javascript.svg"
+                    alt="js-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>Javascript</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technologies -->
+            <div class="skill-box">
+              <p>Technologies</p>
+              <div class="skill-subbox">
+                <div class="skill-item">
+                  <img
+                    src="./images/react.svg"
+                    alt="react-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>React</p>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="./images/django.svg"
+                    alt="django-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>Django</p>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="./images/node-js.svg"
+                    alt="node-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>Node Js</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <!-- Technologies -->
+            <div class="skill-box">
+              <p>Technologies</p>
+              <div class="skill-subbox">
+                <div class="skill-item">
+                  <img
+                    src="./images/vscode.svg"
+                    alt="vscode-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>VS Code</p>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="./images/git.svg"
+                    alt="git-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>Git</p>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="./images/figma.svg"
+                    alt="figma-logo"
+                    width="70rem"
+                    height="70rem"
+                  />
+                  <p>Figma</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
