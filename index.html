@@ -22,18 +22,29 @@
     </title>
   </head>
   <body>
-    <!-- <div class="hamburger">
+    <div id="ham-button" class="hamburger-button" onclick="hamburgerMenu()">
       <i class="fas fa-bars"></i>
     </div>
-    <div class="responsive-nav">
+
+    <div id="ham-menu" class="hamburger-menu">
       <ul>
-        <li><a href="#navigation">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blogs</a></li>
-        <li><a href="#footer">Contact</a></li>
+        <li>
+          <a href="#navigation"><div onclick="hamburgerMenu()">Home</div></a>
+        </li>
+        <li>
+          <a href="#about"><div onclick="hamburgerMenu()">About</div></a>
+        </li>
+        <li>
+          <a href="#projects"><div onclick="hamburgerMenu()">Projects</div></a>
+        </li>
+        <li>
+          <a href="#blog"><div onclick="hamburgerMenu()">Blogs</div></a>
+        </li>
+        <li>
+          <a href="#footer"><div onclick="hamburgerMenu()">Contact</div></a>
+        </li>
       </ul>
-    </div> -->
+    </div>
     <!-- Navigation bar -->
     <section id="navigation">
       <div class="container-dark">
@@ -590,5 +601,7 @@
         </div>
       </footer>
     </section>
+
+    <script type="text/javascript" src="./js/hamburger.js"></script>
   </body>
 </html>
