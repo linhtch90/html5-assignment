@@ -415,6 +415,8 @@ body {
 
 .skill-item > img {
   margin: 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .skill-item > p {
@@ -474,9 +476,9 @@ body {
   border-bottom-left-radius: 2rem;
   border-width: 0.2rem;
   border-color: rgb(246, 76, 114);
-  margin-left: -1.5rem;
   padding-right: 2rem;
-  margin-bottom: -0.2rem;
+  margin-left: -1.4rem;
+  margin-bottom: -0.1rem;
 }
 
 .timeline-node:first-child .timeline-item-border {
@@ -514,7 +516,7 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  margin-right: -2.5rem;
+  margin-right: -3rem;
 }
 
 .timeline-node:nth-child(even) .timeline-number {
@@ -530,7 +532,7 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  margin-left: -2.5rem;
+  margin-left: -3rem;
 }
 
 /* Blog */
