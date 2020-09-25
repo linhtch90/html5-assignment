@@ -14,8 +14,7 @@ function hamburgerMenu() {
   if (hamburgerIcon.classList.contains("fa-bars")) {
     hamburgerIcon.classList.replace("fa-bars", "fa-times-circle");
     return;
-  }
-  if (hamburgerIcon.classList.contains("fa-times-circle")) {
+  } else {
     hamburgerIcon.classList.replace("fa-times-circle", "fa-bars");
     return;
   }

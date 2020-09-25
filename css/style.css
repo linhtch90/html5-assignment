@@ -88,7 +88,7 @@ p {
 
 .navigation-bar > ul > li > a:hover {
   color: rgb(246, 76, 114);
-  transition: 1s;
+  transition: 0.75s;
   cursor: pointer;
 }
 
@@ -140,21 +140,25 @@ p {
   font-weight: 600;
   letter-spacing: 0.2rem;
   background-color: rgb(51, 44, 56);
-  padding: 0.8rem;
+
   border: solid;
   border-width: 0.1rem;
   border-color: rgb(51, 44, 56);
   border-radius: 0.5rem;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5);
   margin-top: 2rem;
   margin-bottom: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .home-button:hover {
   color: rgb(51, 44, 56);
   background-color: whitesmoke;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(246, 76, 114, 0.5);
-  transition: 1s;
+  transition: 0.75s;
   border: solid;
   border-width: 0.1rem;
   border-color: rgb(51, 44, 56);
@@ -169,7 +173,7 @@ p {
 
 .home-icon:hover {
   color: rgb(246, 76, 114);
-  transition: 1s;
+  transition: 0.75s;
   cursor: pointer;
 }
 
@@ -178,14 +182,14 @@ p {
   border-width: 0.2rem;
   border-color: rgb(246, 76, 114);
   border-radius: 1rem;
-  width: 400px;
-  height: 400px;
+  width: 23rem;
+  height: 23rem;
 }
 
 .avatar {
   border-radius: 1rem;
-  width: 400px;
-  height: 400px;
+  width: 23rem;
+  height: 23rem;
   margin-top: -2rem;
   margin-left: -2rem;
 }
@@ -204,15 +208,15 @@ p {
   border-width: 0.2rem;
   border-color: rgb(51, 44, 56);
   border-radius: 1rem;
-  width: 300px;
-  height: 350px;
+  width: 20rem;
+  height: 23rem;
   margin-top: 2rem;
 }
 
 .avatar-about {
   border-radius: 1rem;
-  width: 300px;
-  height: 350px;
+  width: 20rem;
+  height: 23rem;
   margin-top: -2rem;
   margin-left: 2rem;
 }
@@ -267,7 +271,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex: 1;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -277,7 +280,7 @@ p {
   flex-direction: column;
   padding: 0.1rem;
   width: 30%;
-  height: 550px;
+  height: 34rem;
   background-color: whitesmoke;
   border-radius: 1rem;
   align-items: center;
@@ -410,6 +413,7 @@ p {
 .skill-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin-top: 5rem;
@@ -427,6 +431,7 @@ p {
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   width: auto;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .skill-subbox {
@@ -594,8 +599,8 @@ p {
 .blog-card {
   display: flex;
   flex-direction: column;
-  width: 28%;
-  height: 550px;
+  width: 30%;
+  height: 37rem;
   border: solid;
   border-width: 0.5rem;
   border-radius: 0.5rem;
@@ -704,7 +709,7 @@ p {
 .footer-icon:hover {
   color: rgb(246, 76, 114);
   cursor: pointer;
-  transition: 1s;
+  transition: 0.75s;
 }
 
 .footer-credit {
@@ -835,7 +840,7 @@ p {
 
   .card {
     width: 45%;
-    height: 500px;
+    height: 34rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -903,7 +908,7 @@ p {
 
   .blog-card {
     width: 45%;
-    height: 500px;
+    height: 34rem;
   }
 
   /* Footer */
@@ -1048,7 +1053,7 @@ p {
 
   .card {
     width: 70%;
-    height: 500px;
+    height: 34rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -1112,7 +1117,7 @@ p {
 
   .blog-card {
     width: 70%;
-    height: 500pxvh;
+    height: 34rem;
   }
 
   /* Footer */
@@ -1175,7 +1180,7 @@ p {
 
   .hamburger-menu > ul > li > a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: whitesmoke;
     font-weight: 700;
     letter-spacing: 0.2rem;
@@ -1183,7 +1188,7 @@ p {
 
   .hamburger-menu > ul > li > a:hover {
     color: rgb(246, 76, 114);
-    transition: 1s;
+    transition: 0.75s;
     cursor: pointer;
   }
 }
